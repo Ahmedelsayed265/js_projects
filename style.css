@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #181b2e;
+}
+.container {
+  width: 350px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #212845;
+  box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+.movement {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.home,
+.choose,
+.Game {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.title {
+  color: #ffffff;
+  font-size: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.title span {
+  color: #f8d41e;
+  font-size: 45px;
+  margin-right: 10px;
+}
+a {
+  text-decoration: none;
+}
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.comp {
+  width: 200px;
+  height: 40px;
+  background: #f8d41e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.comp:hover {
+  box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.8);
+}
+.x {
+  color: #111214;
+  font-size: 18px;
+  font-weight: 900;
+}
+.choose {
+  visibility: hidden;
+}
+.Game {
+  visibility: hidden;
+}
+.container.choose-mode .home {
+  visibility: hidden;
+}
+.container.choose-mode .choose {
+  visibility: visible;
+}
+.choose {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.players {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.player {
+  background: #f8d41e;
+  width: 130px;
+  height: 40px;
+  margin-right: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player a {
+  color: #111214;
+  font-size: 18px;
+  font-weight: 900;
+}
+.player:hover {
+  box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.8);
+}
+.container.game-mode .choose {
+  visibility: hidden;
+}
+.container.game-mode .Game {
+  visibility: visible;
+}
+.Game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.dash {
+  border: 2px solid #226ffd;
+  border-radius: 5px;
+  width: 280px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 40px;
+}
+#wrap
+{
+  margin-left: 20px;
+}
+.retry {
+  border: 2px solid #226ffd;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+}
+.retry:hover {
+  box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.8);
+}
+.repeat {
+  color: #226ffd;
+  font-size: 18px;
+  font-weight: 900;
+  font-size: 20px;
+}
+.repeat i {
+  color: #ffffff;
+  margin-right: 10px;
+}
+.repeat i:hover {
+  color: black;
+}
+.dash span {
+  color: #226ffd;
+  font-size: 35px;
+  font-weight: 900;
+  line-height: 30px;
+  margin-left: 15px;
+}
+.square {
+  width: 80px;
+  height: 80px;
+  border-right: 2px solid #226ffd;
+  border-bottom: 2px solid #226ffd;
+  color: #ffffff;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.undersquare {
+  width: 80px;
+  height: 80px;
+  border-right: 2px solid #226ffd;
+  color: #ffffff;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.lsquare {
+  width: 80px;
+  height: 80px;
+  border-bottom: 2px solid #226ffd;
+  color: #ffffff;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.undersquare3 {
+  width: 80px;
+  height: 80px;
+  color: #ffffff;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.square,
+.undersquare,
+.lsquare,
+.undersquare3 {
+  cursor: pointer;
+}
+.contanin {
+  display: flex;
+  flex-direction: column;
+}
+.squ {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 414px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+}

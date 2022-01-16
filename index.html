@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XO Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/logo.jpg" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Damion&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="movement">
+            <div class="home" id="home">
+                <h1 class="title"><span> X O</span> Game</h1>
+                <div class="comp">
+                    <a href="#" class="x">play with computer</a>
+                </div>
+                <div class="comp">
+                    <a href="#" class="x" id="next">play with friends</a>
+                </div>
+            </div>
+            <div class="choose">
+                <h1 class="title">choose who is first ?</h1>
+                <div class="players">
+                    <div class="player">
+                        <a href="#" id="X">player X</a>
+                    </div>
+                    <div class="player">
+                        <a href="#" id="O">player O</a>
+                    </div>
+                </div>
+            </div>
+            <div class="Game">
+                <div class="dash"></div>
+                <div class="contanin">
+                    <div class="squ">
+                        <div class="square" id="item1" onclick="game(this.id)"></div>
+                        <div class="square" id="item2" onclick="game(this.id)"></div>
+                        <div class="lsquare" id="item3" onclick="game(this.id)"></div>
+                    </div>
+                    <div class="squ">
+                        <div class="square" id="item4" onclick="game(this.id)"></div>
+                        <div class="square" id="item5" onclick="game(this.id)"></div>
+                        <div class="lsquare" id="item6" onclick="game(this.id)"></div>
+                    </div>
+                    <div class="squ">
+                        <div class="undersquare" id="item7" onclick="game(this.id)"></div>
+                        <div class="undersquare" id="item8" onclick="game(this.id)"></div>
+                        <div class="undersquare3" id="item9" onclick="game(this.id)"></div>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="retry">
+                        <a href="#" class="repeat" id="again"><i class="fas fa-redo-alt"></i>Retry</a>
+                    </div>
+                    <div class="retry" id="wrap">
+                        <a href="#" class="repeat" id="back"><i class="fas fa-home"></i>Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
