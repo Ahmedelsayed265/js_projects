@@ -27,10 +27,15 @@ O_pl.addEventListener("click", () => {
     turn = "O";
 });
 Again.addEventListener("click", () => {
+    let x = document.querySelectorAll('.z');
+    for (let i = 0; i < x.length; i++) {
+        x[i] = '';
+        console.log(x[i].innerHTML);
+    }
     container.classList.remove("game-mode");
 })
 Back.addEventListener("click", () => {
-    container.classList.remove("game-mode", "choose-mode");
+    location.reload();
 })
 // play function
 function game(id) {
